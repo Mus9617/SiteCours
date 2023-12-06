@@ -1,0 +1,261 @@
+body {
+  background-image: url(../img/nebula.gif);
+  height: 113vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-style: italic;
+
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+h2 {
+  margin: 0;
+  color: gold;
+}
+
+p {
+  color: whitesmoke;
+}
+
+img {
+  margin-top: -1;
+  margin: auto;
+  height: 200px;
+  width: 778px;
+}
+
+.logo {
+  max-width: 50px;
+  margin-right: 20px;
+  animation: spin 5s infinite;
+}
+
+.logo img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: pink;
+}
+footer {
+  background-color: rgb(233, 163, 233);
+  color: #000000;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 8px;
+}
+footer:hover {
+  color: red;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.legal-links {
+  margin-left: auto;
+}
+button {
+  margin-right: 8px;
+  color: red;
+}
+.espacio-footer {
+  height: 50px;
+  color: violet;
+}
+
+/* style pour le menu hamburger*/
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: block;
+}
+
+.nav-links.show {
+  display: block;
+}
+
+/* Estil plus responsive pour telephones*/
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+}
+
+#contact a {
+  color: #ffffff;
+  text-decoration: red;
+}
+
+#contact a:hover {
+  color: red;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.blog-section {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.671);
+  border: 2px violet solid;
+  border-radius: 2%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: gold;
+  font-style: italic;
+  margin: auto;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-bottom: violet 2px solid;
+  border-radius: 50%;
+}
+
+.user-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 100%;
+  gap: 12px;
+}
+
+.titre4 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  color: gold;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+.stars .stars-img {
+  height: 100px;
+  width: 100px;
+}
+.blog-post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: black;
+  background-color: whitesmoke;
+  border: 5px grey solid;
+  padding: 15px;
+}
+
+.user-review img {
+  margin-top: -35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.espacio-footer {
+  height: 100px;
+}

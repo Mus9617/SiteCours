@@ -1,0 +1,314 @@
+.ligne-temps {
+  position: relative;
+  align-self: center;
+  width: 500px;
+  max-width: 95vw;
+  font-family: Arial;
+}
+
+.ligne-temps::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 246, 244, 1) 15%,
+    rgba(181, 22, 238, 1) 46%,
+    rgba(0, 255, 76, 1) 95%
+  );
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+  margin-left: 2%;
+}
+.moment {
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.moment:nth-child(even) {
+  left: 55%;
+}
+
+.moment::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.moment:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
+
+.moment h3 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.moment .description {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.moment .description::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 10px);
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #eee;
+}
+
+.moment:nth-child(even) .description {
+  background-color: #3393fe;
+  color: white;
+}
+
+body {
+  background: url(../img/retro222.gif) center center/cover;
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 60px;
+}
+.titre3 {
+  margin: auto;
+  color: gold;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.titre3:hover {
+  color: aqua;
+  border-bottom: red 2px solid;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+  color: greenyellow;
+  font-style: italic;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+h1:hover {
+  color: aqua;
+  border-bottom: aqua 2px solid;
+}
+
+.logo {
+  max-width: 50px;
+  margin-right: 20px;
+  animation: spin 5s infinite;
+}
+
+.logo img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+section {
+  text-align: center;
+  padding: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+
+footer {
+  background-color: rgb(233, 163, 233);
+  color: #000000;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 8px;
+}
+footer:hover {
+  color: red;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.legal-links {
+  margin-left: auto;
+}
+button {
+  margin-right: 8px;
+  color: red;
+}
+
+/* style pour le menu hamburger*/
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: block;
+}
+
+.nav-links.show {
+  display: block;
+}
+
+/* Estil plus responsive pour telephones*/
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+}
+
+.imagen img {
+  width: 600px;
+  height: 295px;
+}
+
+.espacio-footer {
+  height: 50px;
+  flex-shrink: 0;
+}
+
+h3 {
+  color: greenyellow;
+}
+
+h3:hover {
+  color: aqua;
+  border-bottom: 2px red solid;
+}
+
+.description {
+  font-style: italic;
+  font-family: "Gill Sans";
+  font-weight: 600;
+  font-size: small;
+}
+
+.description:hover {
+  color: white;
+  border-bottom: 1px black solid;
+}

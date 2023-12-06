@@ -1,0 +1,162 @@
+body {
+  background-image: url(../img/retrowave.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background-color: white;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.nom:focus {
+  background-color: grey;
+  color: yellow;
+}
+
+.prenom:focus {
+  background-color: grey;
+  color: yellow;
+}
+
+.email:focus {
+  background-color: grey;
+  color: yellow;
+}
+
+.telephone:focus {
+  background-color: grey;
+  color: yellow;
+}
+
+.etoile::after {
+  content: " *";
+  color: red;
+}
+
+footer {
+  background-color: rgb(233, 163, 233);
+  color: #000000;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 8px;
+}
+footer:hover {
+  color: red;
+}
+
+.social-icons a img {
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.legal-links {
+  margin-left: auto;
+}
+button {
+  margin-right: 8px;
+  color: red;
+}
+
+h1 {
+  color: violet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.volver-btn {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid red;
+  color: white;
+  transition: margin-left 0.3s ease; /* Transition pour le hover */
+}
+
+.volver-btn:hover {
+  margin-left: 10px;
+}
+
+.espacio-footer {
+  height: 60px;
+}
+
+h4 {
+  color: black;
+  border-bottom: #000000 2px solid;
+}

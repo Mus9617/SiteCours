@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Formulaire de Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Eh bien Gamer, si tu as une question, n'hésite pas à remplir ce
+        formulaire:
+      </h1>
+
+      <!-- boton pour retourne a la page d'acceuil -->
+      <a href="../index.html" class="volver-btn">PAGE ACCEUIL</a>
+    </header>
+
+    <section>
+      <h4>Formulaire De Contact</h4>
+      <form action="#">
+        <label for="civility">Civilité:</label>
+        <select id="civility" name="civility">
+          <option value="m">M</option>
+          <option value="femenin">MM</option>
+          <option value="mme">Mme</option>
+        </select>
+        <label for="gender">Genre ou Sexe:</label>
+        <select id="gender" name="gender">
+          <option value="masculin">Masculin</option>
+          <option value="femenin">Femenin</option>
+          <option value="Auter">Autre</option>
+        </select>
+
+        <label for="nom" class="etoile">Nom:</label>
+        <input type="text" id="nom" name="nom" class="nom" />
+
+        <label for="prenom" class="etoile">Prenom:</label>
+        <input type="text" id="name" name="name" class="prenom" />
+        <label for="date">Date de Naissence</label>
+        <input type="date" id="date" name="date" class="date" />
+
+        <label for="email" class="etoile">E-Mail:</label>
+        <input type="email" id="email" name="email" class="email" />
+
+        <label for="telephone" class="etoile">Número de Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" class="telephone" />
+
+        <label for="pays">Pays:</label>
+        <select id="pays" name="pays">
+          <option value="france">France</option>
+          <option value="angleterre">Angleterre</option>
+          <option value="usa">USA</option>
+          <option value="argentina">Argentina</option>
+          <option value="mexico">México</option>
+          <option value="espana">España</option>
+        </select>
+
+        <label for="recommandations">Écrivez votre message:</label>
+        <textarea
+          id="recommandations"
+          name="recommandations"
+          rows="4"
+        ></textarea>
+        <label for="politique">
+          J'accepte
+          <a href="../politique/index.html">la politique de confidentialité</a>:
+        </label>
+
+        <input
+          type="checkbox"
+          id="politique"
+          name="politique"
+          class="politique"
+        />
+
+        <button type="submit">Envoayer</button>
+      </form>
+    </section>
+    <script src="./formulario.js"></script>
+
+    <div class="espacio-footer"></div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mar_1996_mus/"
+            ><img src="../temp/img/instagram-seeklogo.com.svg" alt="Instagram"
+          /></a>
+          <a href="https://twitter.com/MMusicforlive"
+            ><img src="../temp/img/X_logo_2023.svg" alt="Twitter"
+          /></a>
+        </div>
+        <p>&copy; 2023 Mostafa</p>
+        <button>
+          <div class="legal-links">
+            <a href="../politique/index.html">Avis Legal</a>
+          </div>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
